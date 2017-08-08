@@ -1,5 +1,4 @@
 # openSIMULATOR-SYSTEMIP
-SYSTEMIP Spielereien
 
 Myip.php gibt die IP zurück von der die Seite aufgerufen wurde.
 
