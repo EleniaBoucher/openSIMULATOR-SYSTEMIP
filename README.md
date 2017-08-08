@@ -12,6 +12,6 @@ Ein Grid Server kann den angebundenen OpenSimulatoren ihre IP zurück geben, so 
 
 Das C-sharp Verzeichnis enthält verschiedene C# Quelldateien um eine IP abzufragen.
 
-Dies ist für wechselnde IP Adressen wie es sie in Europa gibt erforderlich.
+Dies ist für wechselnde IP Adressen erforderlich.
 
 -----------------------------------------------------------------------------------------------------------
