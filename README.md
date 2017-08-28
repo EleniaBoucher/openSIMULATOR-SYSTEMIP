@@ -15,3 +15,7 @@ Das C-sharp Verzeichnis enthält verschiedene C# Quelldateien um eine IP abzufra
 Dies ist für wechselnde IP Adressen erforderlich.
 
 -----------------------------------------------------------------------------------------------------------
+
+Im Verzeichnis addon-modules ist ein OpenSim Beispiel Plugin aus dem Diva Wifi Paket.
+
+Der CsvHelper ist von  Josh Close 2009-2014 https://github.com/JoshClose/CsvHelper/blob/master/src/CsvHelper/Properties/AssemblyInfo.cs
