@@ -1,0 +1,51 @@
+<!-- Addins Example Module -->
+<Project frameworkVersion="v4_0" name="OpenSim.ExternalIP" path="addon-modules/ExternalIP" type="Library">
+  <Configuration name="Debug">
+    <Options>
+      <OutputPath>../../bin/</OutputPath>
+    </Options>
+  </Configuration>
+  <Configuration name="Release">
+    <Options>
+      <OutputPath>../../bin/</OutputPath>
+    </Options>
+  </Configuration>
+
+  <ReferencePath>../../bin/</ReferencePath>
+  <Reference name="System"/>
+  <Reference name="System.Core"/>
+  <Reference name="OpenMetaverse" path="../../bin/"/>
+  <Reference name="OpenMetaverseTypes" path="../../bin/"/>
+  <Reference name="OpenSim.Framework"/>
+  <Reference name="OpenSim.Framework.Servers"/>
+  <Reference name="OpenSim.Framework.Servers.HttpServer"/>
+  <Reference name="OpenSim.Region.Framework"/>
+  <Reference name="OpenSim.Server.Base"/>
+
+  <Reference name="Nini" path="../../bin/" />
+  <Reference name="log4net" path="../../bin/"/>
+  <Reference name="Mono.Addins" path="../../bin/"/>
+  <Reference name="CsvHelper" path="Lib"/>
+  
+  <Reference name="System.Collections.Generic"/>
+  <Reference name="System.IO"/>
+  <Reference name="System.Linq"/>
+  <Reference name="System.Reflection"/>
+  <Reference name="System.Text"/>
+  <Reference name="System.Threading.Tasks"/>
+  <Reference name="System.Timers"/>
+
+  <Reference name="OpenSim.Region.Framework.Interfaces"/>
+  <Reference name="OpenSim.Region.Framework.Scenes"/>
+  <Reference name="OpenSim.Framework.Client"/>
+  <Reference name="OpenSim.Services.Interfaces"/>
+  <Reference name="Nini.Config" path="../../bin/" />
+
+  <Files>
+    <Match pattern="*.cs" recurse="true"/>
+    <Match pattern="*.ini" buildAction="Copy" destination="../../bin/" />
+    <Match pattern="*.php" buildAction="Copy" destination="../../bin/" />
+    <Match pattern="*.dll" recurse="true" buildAction="Copy" destination="../../bin/" />
+  </Files>
+
+</Project>
