@@ -6,4 +6,4 @@ Du kannst in C-Sharp Programieren? dann hilf mir bitte.
 
 Diese Plugin soll zu der SYSTEMIP noch die Externe IP unter EXTERNALIP im OpenSimulator zur verfügung stellen.
 
-Dies soll die sich wechselnden IP Adressen umgehen.
+Dies soll die sich wechselnden IP Adressen der Internetanbieter ausgleichen.
