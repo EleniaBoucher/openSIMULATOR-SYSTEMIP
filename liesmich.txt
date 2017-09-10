@@ -2,15 +2,15 @@ Also ich habe vor zusätzlich zu SYSTEMIP noch eine ExternIP bereit zu stellen.
 Alle Info´s: https://github.com/wp2opensim/openSIMULATOR-SYSTEMIP
 Das Addon schaut in die Opensim.ini nach den Einstellungen:
 
-[EXTERNALIP]
-; Enable or disable ExternalIP (true/false) false
-enabled = false
+     [EXTERNALIP]
+     ; Enable or disable ExternalIP (true/false) false
+     enabled = false
 
-; Internet address where the IP is queried.
-ExternalIPAdress = "http://bot.whatismyipaddress.com/"
+     ; Internet address where the IP is queried.
+     ExternalIPAdress = "http://bot.whatismyipaddress.com/"
 
-; Refresh time in minutes
-ExternalIPRefreshTime = 30 
+     ; Refresh time in minutes
+     ExternalIPRefreshTime = 30 
 
 Hier kann man dann einstellen:
 Ein- ausschalten der Funktion.
