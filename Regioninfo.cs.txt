@@ -1,0 +1,53 @@
+Regioninfo.cs 
+
+655
+           // ExternalHostName
+            //
+            allKeys.Remove("ExternalHostName");
+            string externalName;
+            if (config.Contains("ExternalHostName"))
+            {
+                externalName = config.GetString("ExternalHostName", "SYSTEMIP");
+            }
+            else
+            {
+                externalName = MainConsole.Instance.CmdPrompt("External host name", "SYSTEMIP");
+                config.Set("ExternalHostName", externalName);
+            }
+            if (externalName == "SYSTEMIP")
+            {
+                m_externalHostName = Util.GetLocalHost().ToString();
+                m_log.InfoFormat(
+                    "[REGIONINFO]: Resolving SYSTEMIP to {0} for external hostname of region {1}",
+                    m_externalHostName, name);
+            }
+            else if (!m_resolveAddress)
+            {
+                m_externalHostName = externalName;
+            }
+            else
+            {
+                IPAddress[] addrs = Dns.GetHostAddresses(externalName);
+                if (addrs.Length != 1) // If it is ambiguous or not resolveable, use it literally
+                    m_externalHostName = externalName;
+                else
+                    m_externalHostName = addrs[0].ToString();
+            }
+
+
+
+
+
+1109
+
+                case "external_host_name":
+                    if ((string) configuration_result != "SYSTEMIP")
+                    {
+                        m_externalHostName = (string) configuration_result;
+                    }
+                    else
+                    {
+                        m_externalHostName = Util.GetLocalHost().ToString();
+                    }
+                    break;
+					
